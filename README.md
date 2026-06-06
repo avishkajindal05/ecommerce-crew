@@ -95,6 +95,13 @@ All tools validate inputs with Pydantic (min/max length, safe character sets, in
 
 ---
 
+## Ppt and video link
+
+[ppt and video folder](https://drive.google.com/drive/folders/1MD-w8pUUDa6MuktaTcRA62ojD1c02Ix5?usp=sharing)
+
+---
+
+
 ## Setup
 
 ```bash
