@@ -4,18 +4,20 @@ from crewai import Task
 def research_task(agent, question):
     return Task(
         description="""
-Call investigate_open_complaints.
+Call investigate_open_complaints tool now.
 
-Return:
+You MUST include in your output:
+1. Every open complaint ID and its issue
+2. Every product affected
+3. Full content of every evidence document returned
 
-1. Open complaint IDs
-2. Products affected
-3. Evidence documents
-
-Use only returned evidence.
-Do not invent document names.
+Do not summarise. Return everything the tool gave you.
+Do not invent anything.
 """,
-        expected_output="Grounded evidence report.",
+        expected_output=(
+            "Complete list of open complaints with IDs, products, issues, "
+            "and full text of all evidence documents."
+        ),
         agent=agent
     )
 
@@ -23,15 +25,20 @@ Do not invent document names.
 def analysis_task(agent, context):
     return Task(
         description="""
-        Analyze the complaint evidence.
+Using ONLY the complaint data and evidence passed from the previous task:
 
-        Determine:
-        - unresolved complaints
-        - root causes (defects, shipping, returns)
-        - impacted products
-        - supporting evidence
-        """,
-        expected_output="Structured analysis.",
+1. List every unresolved complaint with its ID and product
+2. Identify root causes (defect, shipping damage, firmware, etc.)
+3. Group complaints by product
+4. Match each complaint to supporting evidence documents
+5. Note which products have multiple complaints (pattern = systemic issue)
+
+Do not invent any complaint IDs or document names.
+""",
+        expected_output=(
+            "Structured analysis: complaints grouped by product, "
+            "root causes identified, evidence matched."
+        ),
         context=[context],
         agent=agent
     )
@@ -40,31 +47,29 @@ def analysis_task(agent, context):
 def report_task(agent, context):
     return Task(
         description="""
-        Write a final report.
+Write a final markdown investigation report using ONLY the analysis passed from the previous task.
 
-        Include:
-        - findings
-        - evidence
-        - recommendations
+Structure:
+## Final Report: Customer Complaints Investigation
 
-        Do not invent information.
-        """,
-        expected_output="Final markdown report.",
-        context=[context],
-        agent=agent
-    )
+## Executive Summary
+(2-3 sentences)
 
+## Open Complaints
+(table: ID | Product | Issue | Root Cause)
 
-def save_task(agent, context):
-    return Task(
-        description="""
-Use save_report tool.
+## Findings
+(key patterns and defects found)
 
-Title:
-Customer Complaints Investigation
+## Evidence
+(which documents support which findings)
 
-Save the final report.
+## Recommendations
+(concrete next steps per product)
+
+Do not invent information. Use only what was passed to you.
 """,
+        expected_output="Complete markdown investigation report with all sections.",
         context=[context],
         agent=agent
     )
