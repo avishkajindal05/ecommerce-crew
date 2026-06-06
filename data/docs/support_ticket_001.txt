@@ -1,0 +1,7 @@
+SUPPORT TICKET #T-2001
+Product: Wireless Headphones
+Customer: Rahul Mehta
+Date: 2026-05-10
+Issue: No sound from left ear since day one. Suspect defective unit.
+Status: Open — awaiting replacement dispatch.
+Agent note: Matches known defect in batch WH200-B06. Approved for replacement.

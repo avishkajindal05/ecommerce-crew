@@ -1,0 +1,7 @@
+WAREHOUSE HANDLING GUIDELINES
+
+All fragile products must be stored in padded sections.
+Electronics must not be stacked more than 3 units high.
+Products with known defect flags must be quarantined immediately.
+Staff must log any damaged packaging before dispatch.
+Quarterly QA audits are mandatory for all product lines.

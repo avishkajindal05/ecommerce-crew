@@ -1,0 +1,7 @@
+RETURNS POLICY
+
+Customers may return any product within 30 days of delivery.
+Items must be unused and in original packaging.
+Defective items are eligible for immediate replacement or full refund.
+Return shipping is covered for all defective or damaged products.
+Refunds are processed within 5-7 business days of receiving the returned item.

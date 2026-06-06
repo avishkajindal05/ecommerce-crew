@@ -1,0 +1,11 @@
+complaint_id,product,issue,status,created_date
+2001,Wireless Headphones,Defective unit - no sound from left ear,Open,2026-05-10
+2002,Running Shoes,Wrong size delivered,Resolved,2026-05-11
+2003,Laptop Stand,Damaged on arrival - cracked plastic,Open,2026-05-12
+2004,USB-C Hub,Overheating after 10 minutes of use,Open,2026-05-13
+2005,Bluetooth Speaker,Battery drains in 1 hour instead of 10,Open,2026-05-14
+2006,Phone Case,Colour faded after 1 week,Resolved,2026-05-15
+2007,Wireless Headphones,Defective unit - ear cushion falling off,Open,2026-05-16
+2008,USB-C Hub,Device not recognised by MacBook,Open,2026-05-17
+2009,Laptop Stand,Hinge broken after 2 days,Open,2026-05-18
+2010,Bluetooth Speaker,Distorted audio at medium volume,Open,2026-05-19

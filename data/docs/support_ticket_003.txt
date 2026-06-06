@@ -1,0 +1,7 @@
+SUPPORT TICKET #T-2009
+Product: Laptop Stand
+Customer: Amit Patel
+Date: 2026-05-18
+Issue: Hinge snapped after 2 days of light use. Product appears damaged or poorly assembled.
+Status: Open — escalated to quality team.
+Agent note: Third complaint this week about Laptop Stand hinge. Flagged for QA review.

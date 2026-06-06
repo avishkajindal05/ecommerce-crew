@@ -1,0 +1,8 @@
+PRODUCT QUALITY REPORT — Wireless Headphones (SKU-WH200)
+
+QA team has identified a recurring defect in the WH200 batch (May 2026).
+Issue: Left driver unit has a loose solder joint causing audio loss.
+Affected units: Batch codes WH200-B05 to WH200-B08.
+Action: All units from affected batch have been flagged for return.
+Replacement stock expected: 2026-06-15.
+Customers reporting this defect should receive immediate replacement.

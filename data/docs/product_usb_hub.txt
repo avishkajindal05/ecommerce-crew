@@ -1,0 +1,8 @@
+PRODUCT QUALITY REPORT — USB-C Hub (SKU-UCH500)
+
+Engineering has confirmed a firmware defect in UCH500 units shipped in May 2026.
+Issue: Overheating due to inadequate power regulation in the USB-A ports.
+Compatibility issue: Certain MacBook models (M2/M3) do not recognise the hub.
+A firmware patch is being developed. ETA: 2026-06-20.
+Customers should be offered a refund or replacement with the updated model.
+Units with complaint reports of overheating should be recalled.

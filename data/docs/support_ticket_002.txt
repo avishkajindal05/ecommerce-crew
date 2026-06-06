@@ -1,0 +1,7 @@
+SUPPORT TICKET #T-2004
+Product: USB-C Hub
+Customer: Priya Sharma
+Date: 2026-05-13
+Issue: Hub overheats after 10 minutes. Cannot use safely.
+Status: Open — refund initiated pending return.
+Agent note: Confirmed firmware defect in UCH500. Customer advised to stop using unit.
